@@ -27,11 +27,7 @@ This is a Dockerfile to set up [OctoPrint](http://octoprint.org/). It supports t
 # Usage
 
 ```shell
-$ docker run \
-  --device=/dev/video0 \
-  -p 80:80 \
-  -v /mnt/data:/data \
-  nunofgs/octoprint
+$ docker run -p 80:80 -v /mnt/data:/data nunofgs/octoprint
 ```
 
 # Environment Variables
