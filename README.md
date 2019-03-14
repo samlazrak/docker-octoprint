@@ -27,7 +27,7 @@ This is a Dockerfile to set up [OctoPrint](http://octoprint.org/). It supports t
 # Usage
 
 ```shell
-$ docker run -d -p 80:80 -v /mnt/data:/data nunofgs/octoprint
+$ docker run -d --restart unless-stopped -p 80:80 -v /mnt/data:/data nunofgs/octoprint
 ```
 
 # Environment Variables
